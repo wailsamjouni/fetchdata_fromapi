@@ -6,7 +6,6 @@ export default function Home() {
     <div className="flex flex-col py-0 px-6 bg-transparent">
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Body />
     </div>
