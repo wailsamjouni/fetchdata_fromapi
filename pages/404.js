@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ImSad } from 'react-icons/im';
 import { GiReturnArrow } from 'react-icons/gi'
 import { RiEmotionSadFill } from 'react-icons/ri'
+import Link from 'next/link'
 
 const ErorrHandle = () => {
 
@@ -31,12 +32,17 @@ const ErorrHandle = () => {
                 </div>
             </div>
             <div>
-                <button className="flex justify-center items-center px-10 py-3 space-x-4 bg-gray-400
+                <Link href="/">
+                    <a>
+                        <button className="flex justify-center items-center px-10 py-3 space-x-4 bg-gray-400
                                     rounded hover:bg-gray-200">
-                    <GiReturnArrow size="1.5rem" />
-                    <h4>Return</h4>
+                            <GiReturnArrow size="1.5rem" />
+                            <h4>Return</h4>
 
-                </button>
+                        </button>
+                    </a>
+                </Link>
+
             </div>
         </div>
     )
