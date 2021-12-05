@@ -17,13 +17,13 @@ const Article = props => {
         );
     };
 
-    const [opacity, setOpacity] = useState(0)
-    useEffect(() => {
-        setInterval(() => {
-            setOpacity(prevOpacity => prevOpacity + 10);
+    // const [opacity, setOpacity] = useState(0)
+    // useEffect(() => {
+    //     setInterval(() => {
+    //         setOpacity(prevOpacity => prevOpacity + 10);
 
-        }, 1000);
-    })
+    //     }, 1000);
+    // })
 
     return (
         <div className="flex flex-col space-x-3.5 border-2 rounded-md border-gray
@@ -31,7 +31,7 @@ const Article = props => {
             <div className="flex items-center justify-center bg-opacity-70">
                 <Image src={props.article.image} width="170" height="170" />
             </div>
-            <div className="flex flex-col bg-gray-300 rounded-md uppercase
+            <div className="flex flex-col bg-gray-200 rounded-md uppercase
                             p-3 min-w-full font-sans text-sm antialiased font-normal">
                 <h3 className="font-semibold">{props.article.title}</h3>
                 <h4 className="text-xs my-2">Category: {props.article.category}</h4>

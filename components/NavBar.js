@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 const NavBar = () => {
+
     return (
         <nav className="flex item-center space-x-56 px-2 m-0 sticky top-0 bg-gray-200 p-2
         shadow-lg">
@@ -23,10 +24,21 @@ const NavBar = () => {
                 </Link>
             </div>
             <div className="inline-flex items-center">
+
                 <button className="bg-gray-200 hover:bg-gray-300 text-gray-800
-                mr-3 font-bold py-2 px-4 rounded-l">Log in</button>
+                mr-3 font-bold py-2 px-4 rounded-l">
+                    <Link href="/about">
+                        <a>Log in</a>
+                    </Link>
+                </button>
+
                 <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 
-                mr-4 font-bold py-2 px-4 rounded-r">Register</button>
+                mr-4 font-bold py-2 px-4 rounded-r">
+                    <Link href="/register">
+                        <a>Register</a>
+                    </Link>
+                </button>
+
             </div>
         </nav>
     )

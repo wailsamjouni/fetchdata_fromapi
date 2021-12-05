@@ -10,6 +10,7 @@ const ErorrHandle = () => {
     useEffect(() => {
         setInterval(() => {
             setChange(!change)
+
         }, 1500)
     })
 
